@@ -5,16 +5,16 @@
 #include <SPI.h>      //SPI library for communicate with the   nRF24L01+
 #include "RF24.h"     //The main library of the nRF24L01+
 #include <SoftwareSerial.h>
-SoftwareSerial bluetooth(7,6);// RX, TX
+SoftwareSerial bluetooth(9,10);// RX, TX
 RF24 radio(1,2);
 char t;
-const int enbA = 3;
-const int enbB = 5;
+const int enbA = 7;
+const int enbB = 8;
 
-#define MLa 8     //left motor 1st pin
-#define MLb 9     //left motor 2nd pin
-#define MRa 10    //right motor 1st pin
-#define MRb 11    //right motor 2nd pin
+#define MLa 3     //left motor 1st pin
+#define MLb 4     //left motor 2nd pin
+#define MRa 5    //right motor 1st pin
+#define MRb 6    //right motor 2nd pin
  
 void setup()
 {
